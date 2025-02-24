@@ -14,6 +14,7 @@
 .header{
   background: var(--lightyellow);
   display: flex;
+  justify-content: flex-start;
   width: 100vp;
   padding: 50px 40px 30px 40px;
   align-items: center;
@@ -164,4 +165,24 @@ body {
   border: 2px solid var(--navblue);
   box-shadow: 0px 4px 0px 0px var(--navblue);
   color: var(--navblue);
+}
+
+/* Project Section */
+
+.projectsection {
+  display: flex;
+  background: var(--textblue);
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.section-headline-dark {
+  color: var(--white);
+  text-align: center;
+  font-family: Silkscreen;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 25px;
 }
