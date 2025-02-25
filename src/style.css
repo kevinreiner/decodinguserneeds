@@ -78,6 +78,7 @@ h2 {
 
 .top-outer-section {
   display: flex;
+  width: 100vw;
   padding: 100px 50px 50px 50px;
   justify-content: center;
   align-items: center;
@@ -118,6 +119,7 @@ h2 {
 
 .startsection {
   display: flex;
+  width: 100vw;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -209,6 +211,7 @@ a {
 .projectsection {
   background: #3B42F1;
   display: flex;
+  width: 100vw;
   padding: 101px 100px;
   flex-direction: column;
   align-items: center;
