@@ -15,7 +15,7 @@
   background: var(--lightyellow);
   display: flex;
   justify-content: flex-start;
-  width: 100vp;
+  width: 100vw;
   padding: 50px 40px 30px 40px;
   align-items: center;
   gap: 30px;
