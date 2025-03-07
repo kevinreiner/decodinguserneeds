@@ -240,6 +240,9 @@ a {
   .header {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 70px;
   }
 
   .nav-button {
@@ -267,6 +270,12 @@ a {
   .arrow-right {
     width: 10vw; 
     height: auto;
+    z-index: 100;
+  }
+
+  .arrow-left:hover, 
+  .arrow-right:hover {
+    transform: rotate(0deg);
   }
 
   .arrowbox {
@@ -278,6 +287,40 @@ a {
     flex-wrap: wrap;
     gap: 0px;
     margin: 0;
+  }
+
+  /* Burger Menu */
+
+  .burger-menu-container {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 10;
+    display: inline;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--navblue);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
   }
 
 }

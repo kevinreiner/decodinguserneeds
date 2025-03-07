@@ -1,6 +1,9 @@
-import './style.css'
-import { setupCounter } from './counter.js'
+const menuBars = document.getElementById ('menu-bars');
 
-//document.querySelector('#app').innerHTML = ``
+function toggleNav() {
+    menuBars.classList.toggle('change');
+}
 
-setupCounter(document.querySelector('#counter'))
+// Event Listeners
+
+menuBars.addEventListener('click', toggleNav);

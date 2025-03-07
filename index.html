@@ -4,38 +4,49 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="src/style.css"> -->
+    <link rel="stylesheet" href="src/style.css">
     <title>Decoding User Needs</title>
   </head>
   <body>
 
     <!-- Header -->
-    <div class="header">
+    <div class="header" class="overlay-content">
       <!-- Navigation Buttons -->
-      <a href="" class="nav-button">&lt;Start&gt;</a>
-      <a href="" class="nav-button">&lt;Projects&gt;</a>
+      <a href="#start" class="nav-button">&lt;Start&gt;</a>
+      <a href="#projects" class="nav-button">&lt;Projects&gt;</a>
       <a href="" class="nav-button">&lt;UX Tool Box&gt;</a>
       <a href="" class="nav-button">&lt;About Me&gt;</a>
       <a href="" class="nav-button">&lt;Contact&gt;</a>
+
+      <!-- Burger Menu -->
+
+      <div class="burger-menu-container" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
     </div>
 
-    <div class="top-outer-section">
+    <!-- Start-->
+    <div class="top-outer-section" id="start">
       <div class="arrowbox">
-        <img class="arrow-left" src="Arrow_Left.svg">
+        <img class="arrow-left" src="svg/Arrow_Left.svg">
           <div class="top-inner-section">
               <div class="headline-text-box">
                 <div class="headline">Decoding</div>
                 <div class="headline">User Needs</div>
               </div>
           </div>
-        <img class="arrow-right" src="Arrow_Right.svg">
+        <img class="arrow-right" src="svg/Arrow_Right.svg">
       </div>
       <div class="startsection">
         <a href="" class="secondary-button">press to start</a>
       </div>  
     </div>
-
-    <div class="projectsection">
+    
+    <!-- Project -->
+    <div class="projectsection" id="projects">
       <div class="section-banner">
         <div class="section-headline-dark">Projects</div>
         <div class="section-headline-dark">Projects</div>
@@ -49,6 +60,10 @@
       </div>
     </div>
 
-    <script type="module" src="src/main.js"></script>
+    <!-- <script type="module" src="src/main.js"></script> -->
+
+    <!-- Script -->
+    <script src="src/main.js"></script>
+    
   </body>
 </html>
