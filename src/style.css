@@ -238,15 +238,15 @@ a {
 /* Media Query: Large Smartphones (Vertical) */
 @media screen and (max-width: 1090px) {
   .header {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-self: center;
     padding-top: 80px;
   }
 
   .overlay {   
-    height: 6%;
+    height: 6vh;
     width: 100%;
     position: fixed; /* Stay in place */
     z-index: 101; /* Sit on top */
