@@ -12,15 +12,21 @@
   --boxbackground: #FDF3E3; 
 }
 
-.header{
+.header, .overlay{
   position: sticky;
   top: 0;
   z-index: 1000;
   background: var(--lightyellow);
   display: flex;
-  padding: 50px 40px 30px 40px;
   align-items: center;
   gap: 30px;
+}
+
+.header {
+  width: 100%;
+  align-items: center;
+  background: var(--lightyellow);
+  height: 100px;
 }
 
 body {
@@ -209,7 +215,7 @@ a {
   padding: 60px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 10px;
   flex-shrink: 0;
   align-self: stretch;
@@ -227,14 +233,24 @@ a {
   align-self: stretch;
 }
 
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
 /* Spacer */
 
-hr { 
+.spacer{
+  display: flex;
+  align-self: stretch;
   height:2px;
   border-width:0;
   color: var(--standardblack);
   background-color: var(--standardblack);
-} 
+  border-radius: 2px;
+  margin: 10px 10px 0 0;
+}
 
 /* Chip-Styling */
 
@@ -347,11 +363,11 @@ line-height: normal;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    align-content: center;
   }
 
   .overlay {   
-    height: 6vh;
+    height: 70px;
     width: 100%;
     position: fixed; /* Stay in place */
     z-index: 101; /* Sit on top */
@@ -361,6 +377,10 @@ line-height: normal;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
+
+  .header, .overlay {
+    justify-content: center;
+  }
   
   .nav-button {
     background-color: var(--white);
@@ -368,6 +388,10 @@ line-height: normal;
     border: 2px solid var(--navblue);
     box-shadow: 0px 4px 0px 0px var(--navblue);
     font-size: 2em;
+    }
+
+  .hide {
+    display: none;
   }
 
   .top-inner-section {

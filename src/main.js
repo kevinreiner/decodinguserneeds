@@ -20,22 +20,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuBars = document.getElementById('menu-bars');
     const myNav = document.getElementById('my-nav');
+    const hideBtns = document.querySelectorAll('.nav-button');
   
-    let navOpen = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
+    let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
   
     function toggleNav() {
       // Toggle der 'change'-Klasse für die Animation der Menü-Bars
       menuBars.classList.toggle('change');
-      
+
       // Navigation-Höhe wechseln basierend auf dem Zustand
-      if (navOpen) {
-        myNav.style.height = "6vh";
+      if (navClose) {
+        myNav.style.height = "70px";
+        hideBtns.forEach(btn => btn.classList.add ('hide'));
+
       } else {
         myNav.style.height = "100%";
+        hideBtns.forEach(btn => btn.classList.remove ('hide'));
       }
       
       // Zustand umkehren
-      navOpen = !navOpen;
+      navClose = !navClose;
     }
   
     // Event Listener für Klick- und Touch-Events hinzufügen
