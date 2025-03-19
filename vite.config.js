@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
 
-    base: './src',
+    base: 'decodinguserneeds/',
     root: resolve(__dirname, 'src'),
     build: {
         outDir: resolve(__dirname, 'docs/'),
