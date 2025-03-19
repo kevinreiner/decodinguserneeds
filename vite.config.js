@@ -14,7 +14,7 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
                 buildingclarity: resolve(__dirname, 'buildingclarity.html')
-            }
-        }
+            },
+        },
     },
-});
+})
