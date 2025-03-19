@@ -5,6 +5,16 @@ import { defineConfig } from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  
-    base: './', build:{outDir:"docs/"},
+
+    base: './',
+    build: {
+        outDir: "docs/",
+        rollupOptions: {
+
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                buildingclarity: resolve(__dirname, 'buildingclarity.html')
+            }
+        }
+    },
 });
