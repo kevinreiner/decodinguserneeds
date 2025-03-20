@@ -66,6 +66,22 @@ h3 {
   margin-bottom: 0;
 }
 
+figure{
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+
+figcaption {
+  color: var(--standardblack);
+  font-family: "Source Code Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-self: stretch;
+}
+
 /* Top Section */
 
 .headline-text-box {
@@ -349,7 +365,8 @@ line-height: normal;
   margin: 25px;
 }
 
-.projectsection {
+/* Section */
+.bluesection {
   background: var(--textblue);
   display: flex;
   padding: 101px 100px;
@@ -359,6 +376,35 @@ line-height: normal;
   flex-shrink: 0;
 }
 
+.yellowsection {
+  background: var(--lightyellow);
+  display: flex;
+  padding: 101px 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  flex-shrink: 0;
+}
+
+/* Contact Section */
+
+.contact{
+  display: flex;
+  align-items: center; 
+  gap: 25px;
+}
+
+
+.fa-brands {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 5em;
+}
+
+.fa-brands:hover{
+  color: var(--lightyellow);
+}
+
 /* Content Pages */
 
 .top {
@@ -366,7 +412,7 @@ line-height: normal;
   flex-direction: column;
   align-self: stretch;
   padding: 60px;
-  margin: 50px;
+  margin: 100px 50px 50px 50px;
   border-radius: 20px 20px 0px 0px;
   border: 1px solid var(--standardblack);
   background: var(--boxbackground);
@@ -396,7 +442,7 @@ line-height: normal;
   box-shadow: 0px 4px 0px 0px var(--standardblack);
   background: var(--white);
   padding: 20px;
-  margin: 40px 0 50px 0;
+  margin: 0 0 15px 0;
 }
 
 
