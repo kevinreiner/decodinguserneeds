@@ -1,28 +1,11 @@
-// const menuBars = document.getElementById('menu-bars');
-// const myNav = document.getElementById('my-nav');
-
-// function toggleNav() {
-//   // Toggle the 'change' class for the menu bars animation
-//   menuBars.classList.toggle('change');
+const menuBars = document.getElementById('menu-bars');
+const myNav = document.getElementById('my-nav');
+const hideBtns = document.querySelectorAll('.nav-button');
+const hideStart = document.getElementById('hide [1]');
+const hideProjects = document.getElementById('hide [2]');
+const hideContact = document.getElementById('hide [5]');
   
-//   // Toggle the navigation height
-//   if (myNav.style.height === "100%") {
-//     myNav.style.height = "6vh";
-//   } else {
-//     myNav.style.height = "100%";
-//   }
-// }
-
-// // Event Listeners - just one is needed now
-// menuBars.addEventListener('click', toggleNav);
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const menuBars = document.getElementById('menu-bars');
-    const myNav = document.getElementById('my-nav');
-    const hideBtns = document.querySelectorAll('.nav-button');
-  
-    let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
+let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
   
     function toggleNav() {
       // Toggle der 'change'-Klasse für die Animation der Menü-Bars
@@ -41,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // Zustand umkehren
       navClose = !navClose;
     }
-  
-    // Event Listener für Klick- und Touch-Events hinzufügen
-    menuBars.addEventListener('click', toggleNav);
-  });
+
+// Event Listeners
+menuBars.addEventListener('click', toggleNav);
+hideStart.addEventListener('click',toggleNav);
+hideProjects.addEventListener('click',toggleNav);
+hideContact.addEventListener('click',toggleNav);
+ 
