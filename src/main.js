@@ -20,7 +20,7 @@ let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speich
         myNav.style.height = "100%";
         hideBtns.forEach(btn => btn.classList.remove ('hide'));
       }
-      
+        
       // Zustand umkehren
       navClose = !navClose;
     }
