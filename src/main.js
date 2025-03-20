@@ -44,5 +44,4 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Event Listener für Klick- und Touch-Events hinzufügen
     menuBars.addEventListener('click', toggleNav);
-    menuBars.addEventListener('touchstart', toggleNav);
   });
