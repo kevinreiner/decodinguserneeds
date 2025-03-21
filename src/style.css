@@ -581,6 +581,33 @@ line-height: normal;
     padding: 25px;
   }
 
+  /* Content Container */
+
+  .top{
+    padding: 25px;
+    margin: 100px 25px 25px;
+  }
+
+  .between{
+    padding: 25px;
+    margin: 25px 25px 25px;
+  }
+
+  /* Image-Box */
+
+  .image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
   /* Chips */
 
   .primary-chip {
