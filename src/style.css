@@ -564,6 +564,14 @@ line-height: normal;
     line-height: 20px;
   }
 
+  .between h1{
+    font-size: 24px;
+  }
+
+  .between h2{
+    font-size: 15px;
+  }
+
   /* Buttons */
 
   .secondary-button {
