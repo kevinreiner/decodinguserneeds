@@ -8,21 +8,21 @@ const hideContact = document.getElementById('hide [5]');
 let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
   
     function toggleNav() {
-      // Toggle der 'change'-Klasse für die Animation der Menü-Bars
-      menuBars.classList.toggle('change');
+    // Toggle der 'change'-Klasse für die Animation der Menü-Bars
+    menuBars.classList.toggle('change');
 
-      // Navigation-Höhe wechseln basierend auf dem Zustand
-      if (navClose) {
-        myNav.style.height = "70px";
-        hideBtns.forEach(btn => btn.classList.add ('hide'));
+    // Navigation-Höhe wechseln basierend auf dem Zustand
+    if (navClose) {
+      myNav.style.height = "70px";
+      hideBtns.forEach(btn => btn.classList.add ('hide'));
 
-      } else {
+    } else {
         myNav.style.height = "100%";
         hideBtns.forEach(btn => btn.classList.remove ('hide'));
       }
-        
-      // Zustand umkehren
-      navClose = !navClose;
+      
+    // Zustand umkehren
+    navClose = !navClose;
     }
 
 // Event Listeners

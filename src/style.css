@@ -335,7 +335,7 @@ p {
 
 text, .infobox {
 color: var(--standardblack);
-text-align: center;
+text-align: left;
 font-family: "Source Code Pro";
 font-size: 12px;
 font-style: normal;
@@ -547,6 +547,48 @@ line-height: normal;
   /* Rotate last bar */
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+  }
+
+  /* Type */
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /* Buttons */
+
+  .secondary-button {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Project-Container */
+
+  .container-box{
+    padding: 25px;
+  }
+
+  .bluesection{
+    padding: 35px;
+  }
+
+  /* Chips */
+
+  .primary-chip {
+    font-size: 11px;
+  }
+
+  .secondary-chip {
+    font-size: 10px;
   }
 
 }
