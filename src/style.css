@@ -444,7 +444,10 @@ line-height: normal;
   margin: 0 0 15px 0;
 }
 
-
+.image-box img {
+  max-width: 40vw;
+  object-fit: contain;
+}
 
 /* Media Query: Large Smartphones (Vertical) */
 @media screen and (max-width: 1090px) {
@@ -607,7 +610,6 @@ line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
   }
 
   .image-box img {
@@ -627,3 +629,4 @@ line-height: normal;
   }
 
 }
+
