@@ -429,6 +429,18 @@ line-height: normal;
   box-shadow: 6px 6px 0px 0px var(--lightyellow);
 }
 
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 60px;
+  margin: 50px;
+  border: 1px solid var(--standardblack);
+  border-radius: 0px 0px 20px 20px;
+  background: var(--boxbackground);
+  box-shadow: 6px 6px 0px 0px var(--lightyellow);
+}
+
 /* Image */
 
 .image-box {
@@ -575,6 +587,14 @@ line-height: normal;
     font-size: 15px;
   }
 
+  .bottom h1{
+    font-size: 24px;
+  }
+
+  .bottom h2{
+    font-size: 15px;
+  }
+
   /* Buttons */
 
   .secondary-button {
@@ -600,6 +620,11 @@ line-height: normal;
   }
 
   .between{
+    padding: 25px;
+    margin: 25px 25px 25px;
+  }
+
+  .bottom{
     padding: 25px;
     margin: 25px 25px 25px;
   }
