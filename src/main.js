@@ -1,18 +1,18 @@
 const menuBars = document.getElementById('menu-bars');
 const myNav = document.getElementById('my-nav');
 const hideBtns = document.querySelectorAll('.nav-button');
-const hideStart = document.getElementById('hide [1]');
-const hideProjects = document.getElementById('hide [2]');
-const hideContact = document.getElementById('hide [5]');
+const hideStart = document.getElementById('hide-1');
+const hideProjects = document.getElementById('hide-2');
+const hideContact = document.getElementById('hide-5');
   
-let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
+let navigation = false; // Flag, um den aktuellen Zustand der Navigation zu speichern
   
     function toggleNav() {
     // Toggle der 'change'-Klasse für die Animation der Menü-Bars
     menuBars.classList.toggle('change');
 
     // Navigation-Höhe wechseln basierend auf dem Zustand
-    if (navClose) {
+    if (navigation) {
       myNav.style.height = "70px";
       hideBtns.forEach(btn => btn.classList.add ('hide'));
 
@@ -22,7 +22,7 @@ let navClose = false; // Flag, um den aktuellen Zustand der Navigation zu speich
       }
       
     // Zustand umkehren
-    navClose = !navClose;
+    navigation = !navigation;
     }
 
 // Event Listeners

@@ -484,7 +484,7 @@ line-height: normal;
     }
 
   .hide {
-    display: none;
+    display: none !important;
   }
 
   .top-inner-section {
