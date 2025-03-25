@@ -485,6 +485,7 @@ line-height: normal;
 
   .header, .overlay {
     justify-content: center;
+    width: 100vw; 
   }
   
   .nav-button {
